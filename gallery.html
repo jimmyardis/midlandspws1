@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery | Midlands Pressure Wash Services LLC</title>
+  <meta name="description" content="Residential & commercial pressure washing serving Columbia, SC and the surrounding area. Call (803) 834-0367 for a free quote."/>
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Midlands Pressure Wash Services logo" />
+        <div class="name">
+          <strong>Midlands Pressure Wash Services LLC</strong>
+          <span>Columbia, SC • Residential & Commercial</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="">Home</a>
+<a href="services.html" class="">Services</a>
+<a href="about.html" class="">About</a>
+<a href="gallery.html" class="active">Gallery</a>
+<a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="phone">
+        <span class="pill">Call: <strong>(803) 834-0367</strong></span>
+        <a class="btn btn-primary" href="contact.html">Get a Free Quote</a>
+        <button class="btn btn-ghost mobile-toggle" data-mobile-btn aria-label="Open menu">Menu</button>
+      </div>
+    </div>
+
+    <div class="container" data-mobile-menu style="display:none; padding-bottom: 14px;">
+      <div class="panel" style="padding: 12px;">
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+<section class="section">
+  <div class="container">
+    <h2>Photo Gallery</h2>
+    <p>A few highlights from our branded photo set—great for web, ads, and social media.</p>
+
+    <div class="gallery">
+      <img data-lightbox src="assets/hero.png" alt="Hero crew photo" />
+      <img data-lightbox src="assets/three_trucks.png" alt="Three trucks lineup" />
+      <img data-lightbox src="assets/eight_in_front_trucks.png" alt="Team in front of trucks" />
+      <img data-lightbox src="assets/eight_commercial_building.png" alt="Team at commercial building" />
+      <img data-lightbox src="assets/driveway_spray.png" alt="Driveway cleaning" />
+      <img data-lightbox src="assets/fleet_wash_business.png" alt="Fleet washing (business)" />
+      <img data-lightbox src="assets/fleet_wash_govt.png" alt="Fleet washing (government)" />
+      <img data-lightbox src="assets/building_wash.png" alt="Commercial building wash" />
+      <img data-lightbox src="assets/set_collage.png" alt="Full branded set collage" />
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="split">
+        <div class="small">
+          <strong style="color: var(--text);">Midlands Pressure Wash Services LLC</strong><br/>
+          10019 Broad River Road, Irmo, SC, USA<br/>
+          Phone: (803) 834-0367 • Email: Midlandspws@gmail.com<br/>
+          Hours: 8:00 am – 5:00 pm
+        </div>
+        <div class="small">
+          <strong style="color: var(--text);">Service Area</strong><br/>
+          Residential: Columbia, SC and surrounding neighborhoods<br/>
+          Commercial: Throughout the Southeast
+        </div>
+      </div>
+      <div class="small" style="margin-top:16px;">
+        © 2025 Midlands Pressure Wash Services LLC. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+  <script>
+    // show mobile menu container only on small screens
+    const mm = document.querySelector('[data-mobile-menu]');
+    if (mm) {
+      const sync = () => {
+        mm.style.display = (window.innerWidth <= 980) ? 'block' : 'none';
+        if (window.innerWidth > 980) mm.classList.remove('open');
+        mm.style.maxHeight = mm.classList.contains('open') ? '240px' : '0px';
+        mm.style.overflow = 'hidden';
+        mm.style.transition = 'max-height .22s ease';
+      };
+      window.addEventListener('resize', sync);
+      const btn = document.querySelector('[data-mobile-btn]');
+      if (btn) btn.addEventListener('click', () => {
+        mm.classList.toggle('open');
+        sync();
+      });
+      sync();
+    }
+  </script>
+</body>
+</html>
